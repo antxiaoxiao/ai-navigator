@@ -1,7 +1,0 @@
-{
-  "/brief/page": "app/brief/page.js",
-  "/page": "app/page.js",
-  "/actions/page": "app/actions/page.js",
-  "/profile/page": "app/profile/page.js",
-  "/map/page": "app/map/page.js"
-}
