@@ -8,7 +8,7 @@ export default function SplashPage() {
         AI Navigator
       </p>
       <blockquote className="font-serif text-2xl text-center text-text leading-relaxed max-w-md mb-12">
-        "A living map of human knowledge — and the path you have walked through it."
+        &ldquo;A living map of human knowledge — and the path you have walked through it.&rdquo;
       </blockquote>
       <Link
         href="/map"
