@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0d0d0f;
+  --color-gold: #C4A882;
+  --color-text: rgba(240, 235, 225, 0.90);
+  --color-text-secondary: rgba(200, 190, 175, 0.60);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-eb-garamond), Georgia, serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
