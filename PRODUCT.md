@@ -1,446 +1,696 @@
 # PRODUCT.md
-> 这是产品的唯一真相文件。所有开发决策以此为准。
-> 最后更新：2026年3月
+> This is the single source of truth for this product. All development decisions are made against this document.
+> Last updated: March 2026
 
 ---
 
-## 一、北极星句子
+## I. North Star Statement
 
-> "一张活的地图，记录人类智识的边界——以及你在其中走过的路。"
+> "A living map that traces the frontier of human knowledge — and the path you walk through it."
 
-每次你不知道该加什么功能、该怎么设计某个交互，回来看这句话。
-如果新功能和这句话冲突，不加。
+Whenever you're unsure whether to add a feature or how to design an interaction, come back to this sentence.
+If a new feature conflicts with it, don't build it.
 
-**产品的完整回路：**
-> A 建立地基（系统知识框架）→ B 每日养分（资讯落在框架上）→ C 触发行动（从认知到现实改变）
-> 三层缺一不可。没有 A，B 是噪音。没有 C，AB 是空谈。
-
----
-
-## 二、产品是什么
-
-**一句话描述：**
-"一个会成长的 AI 时代私人向导——带你建立认知，找到方向，知道下一步。"
-
-**它更像：**
-- 一本活的书（有结构、可深读、随时间生长）
-- 一个有品味的 mentor（不给清单，给方向和好问题）
-- 一张可行动的地图（不只是看，还知道下一步走哪里）
-
-**它不是：**
-- 不是流程化的打卡工具
-- 不是杂乱的信息汇总
-- 不是单方向的内容输入——用户可以提问，产品会回应
-- 不是焦虑制造机——没有"你落后了"
-
-**产品存在的核心理由：**
-> Claude 很聪明，但它不认识你。这个产品认识你。
-
-用户直接问 Claude，得到的是一个通用答案——对所有人都一样，每次从零开始，没有记忆，没有方向感。
-
-这个产品知道你是谁：你的职位、你的方向、你学过什么、你在考虑什么转变。
-所以同一个问题，这里给出的答案不只是"怎么做"，
-而是"为什么这件事对你的成长路径重要，以及你的下一步是什么"。
-
-这是产品真正的护城河——不是功能比 Claude 多，而是比 Claude 更了解这个用户。
+**The Product Loop:**
+> A — Build the foundation (structured knowledge framework) → B — Daily nourishment (news lands on the framework) → C — Trigger action (from understanding to real-world change)
+> All three layers are essential. Without A, B is noise. Without C, A and B are just passive consumption.
 
 ---
 
-## 三、为谁做的
+## II. What Is This Product
 
-**核心用户：**
+**In one sentence:**
+"The personal growth operating system for the AI era — a living map with editorial judgment, helping you find direction in the information flood."
 
-姓名/原型：阿涛（你自己）
-职位：用户体验设计师
+**Why this is different from the previous version:**
+Upgraded from "personal guide" to "knowledge operating system" — not task execution (what Apple does), not a course platform (what Coursera does), but a knowledge system with a standpoint, judgment, and framework.
 
-**真实痛点场景：**
-> 和在 startup 做 AI 产品的 UX 朋友聊天，发现对方只用 Claude Code 和 Conductor 就轻松实现了产品新功能，还用 AI 工具完成了快速测评。当下感到挫败——不是因为能力不足，而是因为从未接触过这些工具，也没意识到工作流程可以在 AI 的介入下迭代得如此之快。事后花了整个周末补课，了解这两个工具之后，却又意识到自己不过是窥见了冰山一角，对 AI 在行业里的整体应用仍然缺乏系统性认知。更重要的是，发现自己根本没有日常学习 AI 的习惯和安排。
+**It's more like:**
+- A living book (structured, deep-readable, grows over time)
+- A mentor with taste (gives direction and good questions, not task lists)
+- An actionable map (not just for viewing — it tells you where to go next)
 
-**他每天打开这个产品的理由：**
-巩固并更新自己的认知——学习基础知识，了解最新资讯，探索与职位相关的新技能、工具和工作方式。
+**It is not:**
+- A habit-tracking or check-in tool
+- A chaotic information aggregator
+- A one-way content feed — users can ask questions, and the product responds
+- An anxiety machine — no "you're falling behind"
 
-**他不打开这个产品的理由：**
-感受到学习压力，需要特意预留时间，觉得"又是一件要完成的事"。
+**Why this product exists:**
+> Claude is smart, but it doesn't know you. This product knows you.
 
-**→ 产品必须解决这个矛盾：** 让打开它感觉像翻一本喜欢的书，而不是完成一项任务。
+When users ask Claude directly, they get a generic answer — the same for everyone, starting from zero each time, no memory, no sense of direction.
 
----
+This product knows who you are: your role, your direction, what you've learned, what transitions you're considering.
+So the same question here gets not just "how to do it" but "why this matters for your growth path, and what your next step is."
 
-## 四、核心体验
+This is the product's real moat — not more features than Claude, but knowing the user better than Claude does.
 
-**打开产品的第一个画面：**
-一张与 AI 和人类相关的哲学性质图片，配以每日一句话。每次打开都不同，用于设定思考的频率，而非传递信息。
+**Why it won't be replaced by Apple / Microsoft Copilot:**
+Apple Intelligence and Copilot operate at the efficiency layer — helping you write emails faster, find files faster, execute tasks faster.
+They have no knowledge framework, no growth narrative, no editorial standpoint.
+An operating system shouldn't have a standpoint — but this product must.
 
-**用户在产品里最想做的三件事（按顺序）：**
-1. 了解今天 AI 世界发生了什么，以及它与自己的工作有何关联
-2. 在知识框架里找到它的位置，加深系统性理解
-3. 知道今天可以采取的一个小行动，去真实感受和尝试
+> Apple makes your tools smarter. This product makes you clearer and more oriented in the AI era.
 
-**用户离开产品时的感受（必须达到）：**
-意犹未尽、有所启发、对当下感到了解和掌控、对未来怀有期待。
+These are two completely different value layers. There is no direct competition.
 
----
-
-## 五、知识框架（产品内容骨架）
-
-**框架是活的，这是产品的核心承诺之一。**
-AI 时代在变，每个层级的内容会更新，新的层级会出现。
-知识地图不是静态目录，而是随时代生长的活体——这正是"活的地图"的含义。
-
-| 层级 | 名称 | 核心问题 | 对 UX 设计师的意义 |
-|------|------|----------|-------------------|
-| L1 | AI 底层认知 | AI 是什么，怎么运转 | 理解 AI 工具背后的逻辑，不再对"黑箱"感到陌生 |
-| L2 | AI 技术全景 | 有哪些方向，我在哪里 | 明确设计工作与哪些 AI 方向直接相关 |
-| L3 | AI 产品与应用 | AI 如何变成真实产品 | 理解 AI UX 与传统 UX 的核心差异 |
-| L4 | AI 工具实操 | 如何用 AI 让自己更强 | 今天就能用——Figma AI、设计测评、用户研究自动化 |
-| L5 | AI 行业与趋势 | 世界在往哪里走 | 判断 UX 这个职位在 AI 时代的演变方向 |
-| L6 | AI 与人·组织 ★新增 | AI 如何改变协作与团队 | 推动团队采纳 AI 工作流，建立 AI 文化，影响组织变革 |
-| L7 | AI 创业与商业 ★新增 | 如何用 AI 创造商业价值 | AI 产品从 0 到 1、商业模式、市场机会、MVP 快速验证 |
-| L8 | AI 伦理与治理 | 如何负责任地使用 AI | 在设计决策中纳入 AI 伦理与用户权益的考量 |
-
-**框架更新的两种类型：**
-- 节点内容更新：已有节点内容变化，节点上显示"最近更新"标记（v0 实现）
-- 新节点或新层级出现：在每日简报或每周问题里专门告知用户（v0 实现）
-
-**框架更新通知机制（v1 功能）：**
-当用户有足够多时，需要设计主动通知——"你关注的某个节点有重要更新"。v0 阶段只有你一个用户，自己知道更新了什么，v1 再建通知系统。
-
-**此框架未来可替换为其他领域（历史、物理等）。**
-架构中以 `domain` 字段标记，v0 值为 `'ai'`。
+**Boundary decision on "cross-tool connection":**
+Cross-tool context awareness (connecting Figma, Teams, Email) is a bonus feature — a v2 optional add-on.
+It is not the product's core. It is not the moat.
+Betting the core on cross-tool connection means losing to big tech. Betting the core on knowledge framework and editorial judgment means big tech can't compete.
 
 ---
 
-## 六、v0 要做什么（边界）
+## II.V. Market Analysis & Competitive Positioning
 
-### 做
+### Market Landscape (2026)
 
----
+The AI-powered personalized learning path market reaches $6B in 2026, projected to grow to $16.4B by 2030 at a 28.6% CAGR. This is a real, large market — but existing products fall into three tiers, each distinct from this product's positioning:
 
-#### 开屏
-每日一图一句，每次打开均不同，内容与人类及智识相关。
-图片分三类交替出现：宇宙与自然尺度 / 人类创造物 / 当下与未来。
-句子标准：不解释 AI，而是触发对人类本质的思考。
+**Tier 1: Enterprise LMS (not a competitor)**
+Docebo, 360Learning, Cornerstone — targeting enterprise HR/L&D, focused on compliance training, skills assessment, and course management.
+Cold products, check-in logic, poor user experience. Their users are corporate HR teams, not individual learners.
 
----
+**Tier 2: Personal career development platforms (partial overlap, differentiable)**
+LinkedIn Learning, Coursera, Pluralsight — rich content but generic.
+No personal context, can't tell you "what this means for you." No knowledge framework, no daily news positioning.
 
-#### 知识地图（竖向长卷）
-采用竖向滚动长卷形式，而非复杂的交互图谱。
-如同一本书的目录与正文——可纵览全局，也可从任意节点跳入深读，随时返回总览。
-更轻、更具书卷感、开发更简单、用户更愿意阅读。
+**Tier 3: AI personal assistants / AI OS (closest to long-term vision, but different direction)**
+Rewind, Dume.ai, Lindy, Apple Intelligence, Microsoft Copilot — cross-tool connection, context awareness, task execution.
+These products operate at the efficiency layer, not the growth layer. No knowledge framework, no editorial standpoint, no career direction narrative.
 
----
+### The Real Market Gap
 
-#### 每日简报
+No existing product simultaneously achieves all four:
+1. Systematic AI knowledge framework (helping people understand the big picture)
+2. Daily news + framework positioning (giving news coordinates)
+3. Personal growth narrative (telling you what this means for you)
+4. Editorial judgment over algorithmic recommendation (a standpoint, with taste)
 
-**定位：** 了解世界。帮助用户知道"今天 AI 发生了什么，它在整个框架里处于什么位置"。
-不包含行动建议——那是"具体行动"模块的职责。
+This is a real gap — and the product's moat.
 
-**结构：3 条精选 + 展开列表**
-- 3 条是编辑判断："这三件事今天最值得你知道。"
-- 展开列表：给想深挖的用户更多选择，但默认不展示。
+### Key Technology Signal
 
-**3 条的类型：**
-- 1条 **技术动态**（L1–L2）：AI 在技术层面发展了什么
-- 1条 **产品/应用动态**（L3）：AI 如何落地成真实产品
-- 1条 **行业/趋势动态**（L5）：AI 正在如何影响行业和职位
+MCP (Model Context Protocol) is mature — Claude via MCP can already connect to Notion, Gmail, Calendar, and Figma, reading work context and executing cross-tool tasks in a single conversation. This is the technical foundation for the v2 "cross-tool connection" feature. It's ready now, not a future possibility.
 
-**每条资讯的结构：**
-- 标题 + 一句摘要
-- 框架层级标注（L1–L6）→ **可点击，跳转至知识地图对应节点**
-- 职位视角解读（基于用户的职位/探索方向）
-- 术语高亮 → **点击触发 AI 即时解释**（在当前文章语境下，不跳转新页面）
+### Competitive Boundary Summary
 
-**关于术语解释的设计选择：**
-不做静态词汇表，而是 AI 即时解释。
-理由：无需维护词汇库，Claude 可以在当前资讯的语境里解释任何术语，比固定词条更准确、更自然。
+| | Big Tech (Apple / Copilot) | Course Platforms (Coursera) | This Product |
+|---|---|---|---|
+| Core value | Efficiency | Knowledge acquisition | Direction + growth narrative |
+| Editorial standpoint | ❌ | ❌ | ✅ |
+| Systematic knowledge framework | ❌ | ❌ | ✅ |
+| Personalisation depth | Tool layer | Behavioural data | Truly knows you |
+| Risk of being replaced | Will do efficiency better | Will have more content | Soul cannot be copied |
 
 ---
 
-#### 具体行动（独立模块，不在简报内）
+## III. Who It's For
 
-**定位：** 改变自己。帮助用户从认知走向真实的工作方式改变。
-和简报分离——两种不同的阅读状态，不能混在一起。
+**Core User:**
 
-**核心设计原则：方向是发现的，不是选择的。**
-不在注册时要求用户填写固定方向——大多数人在开始之前不知道自己真正想要什么。
-产品先展示可能性，让用户自己发现"原来 AI 可以帮我做这件事"，然后持续观察行为信号动态校准。
+Name/Archetype: Tao (yourself)
+Role: UX Designer
 
----
+**Real Pain Point — A Specific Scene:**
+> In a conversation with a UX friend working at an AI startup, I discovered she had shipped a new product feature and run a full usability test using only Claude Code and Conductor. I felt a quiet defeat — not because of a lack of ability, but because I had never encountered these tools, and hadn't realised how dramatically AI could accelerate an entire workflow. I spent the whole weekend catching up. After learning about both tools, I realised I had only glimpsed a small corner of a much larger picture. My understanding of how AI is being applied across the industry remained fragmented and unsystematic. More honestly: I had no daily habit of learning about AI at all.
 
-**阶段一：展示可能性（用户刚来，不问方向）**
+**Why they open the product every day:**
+To consolidate and refresh their understanding — learning fundamentals, staying current with developments, and exploring new skills, tools, and working methods relevant to their role.
 
-首次进入时，呈现三个方向作为启发，可多选（最多两个）：
+**Why they don't open the product:**
+It starts to feel like another obligation. They need to carve out dedicated time for it, and the learning feels pressured rather than pleasurable.
 
-- **日常提效**：用 AI 让今天手上的工作快 2 倍
-- **工作方式升级**：用 AI 重新设计整个工作流，影响团队
-- **职位进化**：用 AI 能力推动职位转型或扩展边界
-
-**为什么最多两个：** 选三个会失焦，系统无法判断今天优先给你什么。两个是合理上限，比如"日常提效 + 职位进化"可以并存。
-
-用户选了哪些、在哪里停留更久——这是第一个信号，系统静默记录。
+**→ The product must resolve this tension:** Opening it should feel like picking up a favourite book — not completing a task.
 
 ---
 
-**阶段二：行为信号持续校准（v0 就建，从第一天起验证）**
+## IV. The Core Experience
 
-系统收集用户的自然行为信号，无需填表，用户无感知：
+**The first screen:**
+A philosophically resonant image — connecting AI and humanity — paired with a daily sentence. Different every time. Its purpose is to set a tone for thinking, not to deliver information.
 
-| 行为信号 | 系统推断 |
-|----------|----------|
-| 在某条资讯停留时间长 | 对这个方向感兴趣 |
-| AI 问答提问的内容 | 当前知识水平 |
-| 行动反馈"太简单"或"刚好" | 难度偏好 |
-| 打开了"转型"相关节点 | 在思考更长远的方向 |
-| 连续几天只看 L4 工具层 | 实操导向用户 |
+**The three things users most want to do (in order):**
+1. Understand what happened in the AI world today, and how it connects to their work
+2. Locate it within the knowledge framework, deepening their systemic understanding
+3. Identify one small action they can take today to genuinely experience it
 
-Claude 综合这些信号，为不同用户生成各自精准的行动建议（以下为内容标准示例，真实内容含完整六要素，Sprint 3 制作）：
-
-- **日常 Figma UX** → 在有 Design System 的情况下，用 Figma AI 或 Claude 根据现有组件规范，生成一个新 Component 初稿，包括 variants 和 auto layout 结构
-- **想影响团队的 UX** → 找出团队现在最耗时的一个重复性工作（整理用研笔记 / 写设计说明 / 做竞品分析），用 AI 工具做一遍并记录时间对比——把真实数据带给团队，数据比演示更有说服力
-- **想转 PM 的 UX（PM 维度）** → 在没有正式需求文档的情况下，用 Claude 从用户痛点出发生成完整需求梳理：problem statement、success metrics、edge cases——感受 PM 思维和 UX 思维的差异
-- **想转 PM 的 UX（前端维度）** → 用 Claude Code 或 Cursor，把你设计的一个简单组件（如一个 card）直接生成可运行的 React 代码——不需要会写代码，但要能读懂输出并提出修改意见
-- **已在用 Claude Code 的 UX** → 今天用 Claude Code 给你的设计系统生成一个 React 组件，要求符合现有 token 规范
-
-**技术实现：** Supabase 存信号 → 每次生成行动建议时将信号塞进 Claude 的 context → Claude 输出精准建议。不是推荐算法，是有上下文的 AI 判断。
+**How users should feel when they leave (non-negotiable):**
+Wanting more. Thoughtfully provoked. A quiet sense of understanding and control over the present. Hopeful about what's ahead.
 
 ---
 
-**两个时间维度（短期 + 长期同时存在）：**
+## V. Knowledge Framework (Content Architecture)
 
-**短期行动（今天或本周可做）：**
-- 具体、可立即执行，预计 15 分钟内完成
-- 格式：动词开头 + 具体步骤 + 预计时间
+**The framework is alive — this is one of the product's core commitments.**
+The AI era changes. Each layer's content will be updated, and new layers will emerge.
+The knowledge map is not a static table of contents but a living organism that grows with the times — this is the true meaning of "a living map."
 
-**长期行动（方向性，1–3 个月维度）：**
-- 基于信号推断的用户方向和职位目标
-- 不是任务清单，而是方向性的思考框架
+| Level | Name | Core Question | Meaning for UX Designers |
+|-------|------|---------------|--------------------------|
+| L1 | AI Fundamentals | What is AI, and how does it work? | Understand the logic behind AI tools — demystify the black box |
+| L2 | AI Technology Landscape | What directions exist, and where am I? | Identify which AI directions are directly relevant to design work |
+| L3 | AI Products & Applications | How does AI become a real product? | Understand the core differences between AI UX and traditional UX |
+| L4 | AI Tools in Practice | How can AI make me stronger? | Apply it today — Figma AI, design evaluation, automated user research |
+| L5 | AI Industry & Trends | Where is the world heading? | Assess how the UX role will evolve in the AI era |
+| L6 | AI & People · Organisations ★New | How is AI changing collaboration and teams? | Drive team adoption of AI workflows, build AI culture, influence organisational change |
+| L7 | AI Entrepreneurship & Business ★New | How to create business value with AI? | AI products from 0 to 1, business models, market opportunities, rapid MVP validation |
+| L8 | AI Ethics & Governance | How do we use AI responsibly? | Factor AI ethics and user rights into design decisions |
 
-**想要更多时：**
-每个行动建议下方提供"展开更多"选项，给想深入的用户进一步阅读和探索的路径。
+**Two types of framework updates:**
+- Node content updates: existing node content changes, node shows "recently updated" tag (v0)
+- New nodes or layers: announced via the daily brief or weekly question (v0)
+
+**Framework update notification (v1 feature):**
+Once there are enough users, a proactive notification system is needed — "a node you follow has an important update." In v0 with only one user, you know when things are updated. Build the notification system in v1.
+
+**This framework can be adapted to other domains in future (history, physics, etc.)**
+Tracked via a `domain` field in the architecture. v0 value: `'ai'`.
 
 ---
 
-**实操内容的形式与来源策略**
+## VI. What v0 Builds (Scope)
 
-具体行动不是抽象建议，而是可以立刻执行的实操内容。
+### Build
 
-**支持的内容形式（v0）：**
-- 文字步骤：具体操作流程，分步说明
-- Prompt 模版：可直接复制使用的模版，附使用场景说明
-- 外部链接：指向已验证的好资源
+---
 
-**暂不支持（v0 不做）：**
-- 动画 / 视频：制作成本过高，v1 考虑
+#### Opening Screen
+A new image and sentence every time the app is opened. Content connects AI and humanity.
+Three image categories, rotating: cosmic and natural scale / human creations / the present and future.
+Sentence standard: don't explain AI — provoke reflection on what it means to be human.
 
-**内容来源三层策略：**
+---
+
+#### Knowledge Map (Vertical Scroll)
+A vertical long-scroll format, not a complex interactive graph.
+Like the table of contents and body of a book — scan the whole, dive into any section, return to the overview at any time.
+Lighter, more book-like, simpler to build, and more inviting to read.
+
+---
+
+#### Daily Brief
+
+**Purpose:** Understand the world. Help users know "what happened in AI today, and where it sits in the broader framework."
+Action suggestions are not included here — that is the responsibility of the Actions module.
+
+**Structure: 3 curated items + expandable list**
+- 3 items represent editorial judgement: "These are the three things most worth knowing today."
+- Expandable list: more items available for users who want to go deeper, hidden by default.
+
+**The 3 item types:**
+- 1 **Technology update** (L1–L2): What is developing at the technical level
+- 1 **Product/application update** (L3): How AI is being built into real products
+- 1 **Industry/trend update** (L5): How AI is shaping industries and roles
+
+**Structure of each news item:**
+- Headline + one-sentence summary
+- Framework level tag (L1–L6) → **tappable, jumps to the corresponding node in the knowledge map**
+- Role-specific insight (two dimensions):
+  - **Short-term impact**: What this means for your work this week
+  - **Long-term direction**: If this trend continues, how will your role change in 3–6 months?
+- Highlighted terms → **tap to trigger inline AI explanation** (within the context of the current article)
+
+**Design principle on "prediction":**
+No fortune-telling predictions ("X role will disappear in three years").
+Instead: trend judgements backed by evidence — based on current AI development speed and direction, what capability is most worth investing in right now.
+Users build their own sense of career direction by reading daily, rather than passively receiving prophecies.
+
+**Design decision on term explanation:**
+No static glossary. Instead: AI explains terms on demand.
+Rationale: no glossary to maintain; Claude explains any term in the context of the current article — more accurate, more natural, always current.
+
+---
+
+#### Actions (Standalone module, separate from the Daily Brief)
+
+**Purpose:** Change yourself. Help users move from understanding to real changes in how they work.
+Kept separate from the Brief — these are two distinct reading states that dilute each other when mixed.
+
+**Core design principle: direction is discovered, not chosen.**
+Don't ask users to set a fixed direction at sign-up — most people don't know what they truly want before they start.
+The product first shows possibilities, letting users discover "I didn't know AI could help me with this," then continuously observes behavioural signals to calibrate dynamically.
+
+---
+
+**Phase 1: Show possibilities (user just arrived, don't ask for direction)**
+
+On first entry, present three directions as inspiration — multi-select, maximum two:
+
+- **Daily efficiency**: Use AI to do today's work twice as fast
+- **Workflow upgrade**: Use AI to redesign your entire workflow and influence the team
+- **Role evolution**: Use AI capabilities to drive a career transition or expand your scope
+
+**Why maximum two:** Choosing all three creates focus loss — the system can't determine what to prioritise today. Two is the right ceiling; "daily efficiency + role evolution" can coexist.
+
+Which ones the user selects, and where they linger longest — these are the first signals, recorded silently.
+
+---
+
+**Phase 2: Continuous behavioural signal calibration (built in v0, validated from day one)**
+
+The system collects natural behavioural signals — no forms, invisible to the user:
+
+| Signal | Inference |
+|--------|-----------|
+| Long dwell time on a news item | Interested in this direction |
+| Content of AI Q&A questions | Current knowledge level |
+| Action feedback "too easy" or "just right" | Difficulty preference |
+| Opens "transition"-related nodes | Thinking about longer-term direction |
+| Only reads L4 tools layer for several days | Hands-on oriented user |
+
+Claude synthesises these signals to generate personalised action recommendations (examples below are content standard illustrations — full six-element content produced in Sprint 3):
+
+- **Daily Figma UX** → With a Design System in place, use Figma AI or Claude to generate a new component draft based on existing component specs — including variants and auto layout structure
+- **UX wanting to influence team** → Identify the most time-consuming repetitive task in your team (organising user research notes / writing design specs / competitive analysis), do it with AI and record the time comparison — real data is more persuasive than a demo
+- **UX transitioning to PM (PM dimension)** → Without a formal requirements document, use Claude to generate a complete requirements breakdown from user pain points: problem statement, success metrics, edge cases — feel the difference between PM and UX thinking
+- **UX transitioning to PM (frontend dimension)** → Use Claude Code or Cursor to generate runnable React code from a simple component you've designed (e.g. a card) — you don't need to write code, but you need to read the output and suggest changes
+- **UX already using Claude Code** → Today use Claude Code to generate a React component for your design system, matching your existing token specs
+
+**Technical implementation:** Supabase stores signals → signals are inserted into Claude's context when generating action recommendations → Claude outputs precise recommendations. Not a recommendation algorithm — AI judgement with context.
+
+---
+
+**Content standard — every action recommendation must include six elements:**
 
 ```
-第一层：策展外部资源（主要来源）
-        找到真实被验证的模版和案例，注明来源，链接原文
-        加编辑点评："为什么这个模版好用，在什么场景下用"
-        不全文复制，做摘要或改编，保留原始来源归属
-
-第二层：Claude 个性化调整
-        用户看到通用模版，可点击"根据我的情况调整"
-        Claude 根据用户职位和行为信号，把通用模版改成更贴合的版本
-
-第三层：用户自己沉淀（登录功能）
-        用过觉得好的模版可以收藏进"我的模版库"
-        这是登录功能的核心价值之一
+1. Scenario description  — When to use this
+2. Tool(s)               — Specific software (Figma / Claude / Cursor etc.)
+3. Steps                 — Step by step, one sentence per step, max 5 steps
+4. Template or starting point — A prompt / file / link ready to copy and use
+5. Time estimate         — 15 minutes / 1 hour / this week
+6. Success marker        — What you should have when you're done
 ```
 
-**为什么策展外部资源优于 Claude 生成：**
-被真实用户验证过的模版比 AI 凭空生成的更可信。
-用户看到"这是 X 在实际项目里用的 prompt"，执行意愿远高于"AI 生成的建议"。
-和整个产品的编辑策展逻辑一致——不生产内容，挑选和组织最好的内容。
+These six elements ensure every action recommendation is tangible, not abstract. Missing any one of them means the recommendation is not ready.
 
-**版权注意事项：**
-直接搬运有版权风险。标准做法：注明来源 + 链接原文 + 摘要或改编，不全文复制。
+**Two time horizons (short-term + long-term coexist):**
 
-**内容制作时间节点：**
-PRODUCT.md 里的示例是内容标准和方向参考。
-真实的第一批内容（完整六要素、具体步骤、可用模版）在 Sprint 3 制作，不在产品设计阶段做。
+**Short-term actions (today or this week):**
+- Specific and immediately executable, estimated 15 minutes
+- Format: starts with a verb + concrete steps + estimated time
 
----
+**Long-term actions (directional, 1–3 month horizon):**
+- Based on inferred user direction and career goals
+- Not a task list — a directional thinking framework
 
-#### 搜索入口（新增，v0 核心功能）
-
-**定位：** 用户在工作中遇到 AI 相关问题时，第一反应是来这里搜索，而不是去 YouTube 或 Google。
-
-**搜索结果的结构：**
-```
-用户搜索："Figma AI 生成 Design System"
-
-1. 精简答案      — 怎么做（步骤 + 工具），直接可用
-2. 框架定位      — 这个技能在 6 层框架里的位置（如 L4 工具实操）
-3. 个人旅途关联  — 基于用户的背景和方向，说明这个技能为什么对他重要
-                   例："基于你想转 PM 的方向，掌握这个技能还有一个更深的价值——
-                        它会让你在和开发沟通时有更强的技术话语权。
-                        这是你长期路径里 L4 → L3 的一个关键节点。"
-4. 相关行动建议  — 学完这个你的下一步是什么
-5. 相关知识节点  — 可以继续深读的方向
-6. 相关近期资讯  — 这个方向的最新动态
-```
-
-**为什么这个体验比直接用 Claude 更好：**
-Claude 每次从零开始，不认识用户。
-这里的搜索结果把答案放进用户的个人旅途里——同一个问题，因人而异。
-这是 Google、YouTube、Claude 都给不了的体验。
-
-**搜索也是最精准的需求信号：**
-用户搜了什么，比任何问卷都真实。这些搜索行为直接进入行为信号系统，帮助校准后续的行动建议。
+**When users want more:**
+Each action item offers an "explore further" option for users who want to go deeper.
 
 ---
 
-#### AI 问答
-用户阅读任何内容（简报、知识节点、行动建议、搜索结果）时，可随时提问。
-Claude 在当前内容的语境下作答，无需跳转新页面。
-入口轻量——是阅读的自然延伸，不是独立功能模块。
-
----
-
-#### 每周策展问题
-注册时选择探索方向（职位成长 / 工具提效 / 团队影响 / 转型方向）。
-Claude 每周根据方向策展一个值得深思的好问题。
-非算法推荐，而是有品味的编辑判断。
-
----
-
-#### 访客模式的即时个性化
-未登录用户首次进入时，显示轻量单选："今天你来这里想探索什么？"
-选择后，当天内容按所选方向呈现。无注册压力，下次来重新选择亦可。
-
----
-
-### 不做（v0 坚决不碰）
-
-- 打卡、连续天数、完成率
-- 强制登录
-- 测评、评分、排名
-- 复杂力导向星系图（已改为长卷）
-- 管理层看板
-- 多领域切换
-- 静态词汇表（用 AI 即时解释替代）
-
----
-
-### 登录可选（做，但不设为门槛）
-
-- 足迹记录：在地图上高亮已访问的节点
-- 职位与方向设置的持久化
-- 每周问题方向的记忆
-- 行动建议历史
-- 我的模版库：收藏用过的好模版，随时复用
-
----
-
-### 职位选项
-
-v0：UX/设计师、工程师、产品经理、管理层
-v1 扩展：销售、数据分析师、市场运营、创业者
-
----
-
-### 导航结构（已决定）
-
-**开屏：** 每次启动时自动出现，不占导航位置。
-
-**底部导航四个入口：**
-
-| 入口 | 内容 | 心理状态 |
-|------|------|----------|
-| 地图 | AI 知识框架竖向长卷，节点详情 | 俯瞰全局，深入探索 |
-| 简报 | 每日 3 条精选资讯 + 展开列表 | 了解世界，观察者 |
-| 行动 | 短期 + 长期行动建议 | 改变自己，行动者 |
-| 我的 | 足迹、设置、每周策展问题 | 回顾，定位自己 |
-
-**搜索入口：** 全局搜索栏，固定在顶部，任何页面都可以触达。不占底部导航位置。
-
-**三个入口独立，但内容深度互联：**
-- 简报里的层级标注 → 点击跳转地图对应节点
-- 地图节点 → 关联资讯 → 跳回简报
-- 行动建议 → 关联知识节点 → 跳转地图
-- 简报底部 → "这条资讯触发了一个行动建议 →" 跳转行动
-
-用户可以从任何入口进来，在三者之间自然流动。
-
----
-
-## 七、设计原则（不可违背）
-
-1. **书的逻辑，不是 app 的逻辑**
-   没有通知轰炸，没有完成率，没有"你落后了"
-
-2. **策展而非推荐**
-   有品味的编辑声音，而非基于行为数据的算法
-
-3. **好问题优于好答案**
-   留下值得思考的问题，比提供待完成的清单更有价值
-
-4. **进门永远开着**
-   访客随时翻阅，登录只是为了留下足迹，不是门槛
-
-5. **克制加法**
-   每加一个功能前问：这是书里会有的东西吗？
-
-6. **认知到行动的完整回路**
-   每次体验都应包含：了解 → 理解 → 可以做什么。缺少行动层，产品就只是阅读工具。
-
-7. **深浅由用户决定**
-   默认呈现精选和摘要，展开选项永远存在。不强迫深读，也不阻止深读。
-
----
-
-## 八、技术决策
-
-| 决策 | 选择 | 理由 |
-|------|------|------|
-| 前端框架 | Next.js 14 | Claude Code 友好，Vercel 部署零配置 |
-| 知识地图 | 竖向长卷 + CSS scroll | 比 D3 更轻，更具书卷感，v1 可叠加交互层 |
-| 数据库 | Supabase | BaaS 一体化，Auth 处理可选登录 |
-| AI 层 | Claude API (claude-sonnet-4-6) | 策展编辑声音、资讯分析、术语解释、问答、每周问题、行动建议 |
-| 资讯抓取 | RSS + Vercel Cron | 每日 UTC 06:00 自动触发 |
-| 开发工具 | Conductor + Claude Code | 并行 agent，你作为指挥家 |
-| 样式 | Tailwind CSS | 暗色主题，EB Garamond，暗金 #C4A882 |
-
----
-
-## 九、版本路线图
+**Content sourcing strategy — three layers:**
 
 ```
-v0  ← 现在
-    开屏 + 知识长卷 + 节点详情 + AI 问答 + 搜索入口
-    + 每日简报（3条精选+展开）+ 具体行动（短期+长期）
-    + 每周策展问题
-    目标：你自己每天想打开它，遇到 AI 问题第一反应来这里搜索
+Layer 1: Curated external resources (primary source)
+         Find real, validated templates and case studies
+         Add editorial commentary: "why this template works and when to use it"
+         Don't copy in full — summarise or adapt, keep original attribution
 
-v1  ← v0 验证后
-    足迹系统 + 登录持久化 + 资讯自动落图 + 更多职位选项
-    + 框架更新主动通知机制
+Layer 2: Claude personalisation
+         Users see a general template, can click "adapt to my situation"
+         Claude adjusts based on role and behavioural signals
 
-v2  ← 有真实用户后
-    职位成长推荐列表 + 多人版本 + 企业看板 + 多领域（历史、物理等）
+Layer 3: User's own accumulation (login feature)
+         Templates users find valuable can be saved to "My Template Library"
+         This is one of the core values of the login feature
+```
+
+**Content production timing:**
+Examples in PRODUCT.md are content standards and directional references.
+Real first-batch content (full six elements, specific steps, usable templates) is produced in Sprint 3, not during the product design phase.
+
+---
+
+#### Search (New — v0 core feature)
+
+**Purpose:** When users encounter an AI-related question during work, their first instinct is to search here — not YouTube or Google.
+
+**Search result structure:**
+```
+User searches: "Figma AI generate Design System"
+
+1. Direct answer      — How to do it (steps + tools), immediately usable
+2. Framework location — Where this skill sits in the 8-layer framework (e.g. L4 Tools in Practice)
+3. Personal journey   — Based on the user's background and direction, why this matters for them
+                        e.g. "Given your goal of transitioning to PM, mastering this skill
+                             has a deeper value — it gives you stronger technical vocabulary
+                             when talking to developers. This is a key node on your L4 → L3 path."
+4. Related actions    — What your next step is after learning this
+5. Related nodes      — Directions to explore further
+6. Related recent news — Latest developments in this direction
+```
+
+**Why this is better than asking Claude directly:**
+Claude starts from zero every time — it doesn't know the user.
+Search results here are placed inside the user's personal journey — the same question, tailored to the individual.
+This is an experience Google, YouTube, and Claude cannot provide.
+
+**Search as the most precise signal:**
+What users search for is more honest than any survey. These searches feed directly into the behavioural signal system to calibrate future action recommendations.
+
+---
+
+#### AI Q&A
+While reading any content (brief, knowledge node, action, search results), users can ask questions at any point.
+Claude responds within the context of the current content — no page navigation required.
+The entry point is lightweight — a natural extension of reading, not a standalone feature module.
+
+---
+
+#### Weekly Curated Question
+At sign-up, users choose an exploration direction (career growth / tool efficiency / team impact / career transition).
+Claude curates one meaningful question per week, tailored to that direction.
+Not algorithmic — editorially judged, with taste.
+
+---
+
+#### Guest Mode — Instant Personalisation
+On first visit (no login required), a lightweight single-choice prompt appears: "What are you here to explore today?"
+Content for the session is shaped by their answer. No pressure to register. Fine to choose again next time.
+
+---
+
+### Don't Build (v0 hard limits)
+
+- Check-ins, streaks, completion rates
+- Forced login
+- Assessments, scoring, rankings
+- Complex force-directed galaxy graphs (replaced by scroll)
+- Admin/manager dashboard
+- Multi-domain switching
+- Static glossary (replaced by AI inline explanation)
+
+---
+
+### Optional with Login (build, but never a barrier)
+
+- Footprint tracking: highlight visited nodes on the map
+- Persistent role and direction settings
+- Weekly question direction memory
+- Action history
+- My Template Library: save useful templates for reuse
+
+---
+
+### Role Options
+
+v0: UX/Designer, Engineer, Product Manager, Manager
+v1 additions: Sales, Data Analyst, Marketing, Founder
+
+---
+
+### Navigation Structure (Decided)
+
+**Opening screen:** Appears automatically on each launch. Does not occupy a navigation slot.
+
+**Four bottom navigation entries:**
+
+| Entry | Content | Mental state |
+|-------|---------|--------------|
+| Map | AI knowledge framework vertical scroll, node details | Overview, deep exploration |
+| Brief | 3 curated daily news items + expandable list | Understand the world, observer |
+| Actions | Short-term + long-term action recommendations | Change yourself, actor |
+| Profile | Footprint, settings, weekly curated question | Reflect, locate yourself |
+
+**Search bar:** Fixed at the top, accessible from any page. Does not occupy bottom navigation.
+
+**Three entries are independent, but content is deeply interconnected:**
+- Brief level tags → tap to jump to the corresponding knowledge map node
+- Map nodes → related news → jump back to Brief
+- Action recommendations → related knowledge nodes → jump to Map
+- Brief footer → "This news triggered an action recommendation →" jump to Actions
+
+Users can enter from any point and flow naturally between the three.
+
+---
+
+## VII. Design Principles (Non-Negotiable)
+
+1. **Book logic, not app logic**
+   No notification bombardment. No completion rates. No "you're falling behind."
+
+2. **Curation over recommendation**
+   An editorial voice with taste — not an algorithm driven by behavioural data.
+
+3. **Good questions over good answers**
+   A question worth sitting with is more valuable than a list to complete.
+
+4. **The door is always open**
+   Guests can browse any time. Login exists to leave a footprint — never as a barrier.
+
+5. **Restraint as a feature**
+   Before adding anything, ask: would this exist in a book?
+
+6. **The complete loop: understanding to action**
+   Every session should contain: learn → locate → what can I do? Without the action layer, the product is just a reader.
+
+7. **Depth is the user's choice**
+   Default to curated summaries. The option to go deeper is always there. Never force deep reading — never block it either.
+
+---
+
+## VIII. Technical Decisions
+
+| Decision | Choice | Rationale |
+|----------|--------|-----------|
+| Frontend | Next.js 14 | Claude Code-friendly; zero-config Vercel deployment |
+| Knowledge map | Vertical scroll + CSS | Lighter than D3; more book-like; interactive layer can be added in v1 |
+| Database | Supabase | Integrated BaaS; Auth handles optional login |
+| AI layer | Claude API (claude-sonnet-4-6) | Editorial voice, news analysis, inline term explanation, Q&A, weekly questions, action suggestions |
+| News ingestion | RSS + Vercel Cron | Auto-triggers daily at UTC 06:00 |
+| News archive | Supabase permanent storage | Every news item stored with complete fields from day one (level, role insight, user goal association) — prepares data for v1 history search |
+| Dev tooling | Conductor + Claude Code | Parallel agents; you as conductor |
+| Styling | Tailwind CSS | Dark theme, EB Garamond, gold accent #C4A882 |
+
+---
+
+## IX. Version Roadmap
+
+```
+v0  ← Now
+    Opening screen + knowledge scroll + node detail + AI Q&A + search
+    + daily brief (3 curated + expand) + actions (short & long term)
+    + weekly curated question
+    Goal: you want to open it every day, first instinct to search here for AI questions
+
+v1  ← After v0 is validated
+    Footprint system + persistent login + news mapped to nodes
+    + expanded role options + framework update notifications
+    + brief history archive + filter by user goal ("past 6 months of startup-related briefs")
+    + founder user path expansion (L7 deep dive: business models, 0 to 1)
+
+v2  ← After real users
+    Role-based growth recommendations + multi-user version
+    + enterprise dashboard + multi-domain support (history, physics, etc.)
+    + cross-tool connection via MCP (Figma, Teams, Email — optional, not core)
+
+v3  ← The long-term vision
+    Personal AI Operating System for the AI era
+    The product observes your actual work across all tools and surfaces —
+    not because you described yourself, but because it sees you work.
+    See section below for full v3 vision.
 ```
 
 ---
 
-## 十、未解决的问题（诚实记录）
+### V3 Vision: Personal AI Operating System
 
-1. 知识长卷如何在"纵贯全局"与"深入某节"之间切换得自然流畅？**需要原型测试。**
-2. 行为信号系统的准确性需要真实使用验证——信号能否真的推断出用户方向和水平？Claude 根据信号生成的行动建议是否真的精准？这是 v0 最核心的待验证假设之一。
-3. AI 问答与术语解释入口如何设计，才能不打断阅读心流？**需要交互细节设计。**
-4. 每日开屏图片的来源：Unsplash API 能否稳定提供符合三类标准的图片？还是需要人工策划图库？
-5. 访客的探索方向选择，如何在不登录的情况下跨页面保持上下文？（可用 session storage 实现，需确认。）
-6. ~~简报和具体行动是在同一页面先后出现，还是在独立的导航入口？~~ **已决定：独立导航入口，见第六节导航结构。**
+**What v3 is:**
+
+> The product evolves from "a map you read" into "a collaborator that knows your work."
+
+In v0–v2, the product knows you because you tell it who you are.
+In v3, the product knows you because it observes how you actually work.
+
+**The technical foundation — MCP (Model Context Protocol):**
+MCP already exists and is production-ready. Claude via MCP can today connect to Notion, Gmail, Calendar, Figma — reading your meeting transcripts, updating tasks, drafting follow-ups, all in one conversation.
+
+This means v3 is not a distant future. It's a deliberate evolution built on the same foundation.
+
+**What v3 looks like in practice:**
+
+```
+You finish a design review in Figma at 3pm.
+The product sees the session, notices you struggled with a component pattern.
+That evening it surfaces: "Based on your Figma session today, here's an L4 action
+that directly addresses what you were working on — and it connects to this week's
+news about AI-generated design systems."
+
+You attend a team meeting in Teams.
+The product reads the transcript (with your permission).
+It identifies an AI opportunity in your team's workflow and adds it to your
+long-term action queue: "Your team spends ~40 min per sprint writing handoff notes.
+Here's how to automate that."
+```
+
+**Why this won't be replaced by Apple Intelligence or Copilot:**
+
+Apple and Copilot see your tools. They help you execute tasks faster.
+They don't have a knowledge framework. They don't build a growth narrative.
+They don't tell you what your work patterns mean for your career trajectory.
+
+v3 of this product sees your tools AND interprets them through the lens of your growth —
+connecting daily work observations to the knowledge framework, career direction, and actionable next steps.
+
+**The progressive trust model:**
+
+```
+v0: Product knows you because you tell it (role, direction, goals)
+v1: Product knows you because it remembers your history (footprint, searches, actions taken)
+v2: Product knows you because you show it samples (upload meeting notes, share a Figma file)
+v3: Product knows you because it observes continuously (MCP connections, with full consent)
+```
+
+Each step deepens the relationship. No step is forced.
+
+**Boundary with big tech — permanently valid:**
+
+Even at v3, the moat is not "we see more of your work than Apple does."
+The moat is "we interpret what we see through a knowledge framework and growth narrative that big tech will never build — because operating systems don't have editorial standpoints, and this product does."
+
+**Privacy commitment:**
+All tool connections require explicit user consent.
+No data is used to train models.
+Users can disconnect any tool at any time.
+The product never stores raw content — only synthesised insights.
 
 ---
 
-## 十一、给自己的话
+### Enterprise Version Planning (v2 Detail)
 
-当下，人类正处于一个由 AI 驱动的变革时代，社会的各个层面都将迎来深刻改变。作为一个亲历这场变革初期的人，我希望系统性地认识 AI，并以工作者和社会参与者的双重身份，探索如何在这两个维度上更好地成长。这种探索不局限于眼前的日常，也指向更长远的展望与参与。
+**Core difference: Personal vs Enterprise**
 
-做这个产品本身，就是我探索产品设计师这一职业可能性的过程。
+| | Personal | Enterprise |
+|---|---|---|
+| Action content | Based on individual interests and direction | Based on company-wide standards |
+| Selection | User chooses | Management defines |
+| Goal | Personal growth | Team baseline uplift |
+| Assessment | Optional, lightweight | Completion records exist, visible to management |
+
+**Content in two layers:**
 
 ---
 
-*"一张活的地图，记录人类智识的边界——以及你在其中走过的路。"*
+**Layer 1: Mandatory for all (universal — works for any company, any role)**
+
+This layer doesn't depend on a specific role or industry. Any employee at any company can use it immediately.
+Structured into three modules:
+
+**Module A: AI Fundamentals (understanding, not technical)**
+- What AI is and isn't — explained with an analogy anyone can grasp
+- How large language models work — why they sometimes "make things up"
+- The boundaries of AI capability — what's worth delegating to AI, what isn't
+- Basic principles for using AI at work (accuracy, privacy, copyright)
+
+**Module B: Prompt Basics (core hands-on skill)**
+This is the most important part of the mandatory layer — learn to ask well, and you'll use AI well.
+
+*Ready-to-use prompt template library:*
+
+```
+1. Summary template
+"Please summarise the following into 3 key points, max 2 sentences each: [content]"
+
+2. Rewrite template
+"Please rewrite the following to be more [formal / concise / friendly],
+keeping the core meaning intact: [content]"
+
+3. Review template
+"Please check the following for [grammatical errors / logical gaps /
+unclear expressions] and suggest improvements: [content]"
+
+4. Brainstorm template
+"I need 5 different approaches to [topic]. Please suggest ideas
+from different angles."
+
+5. Explain template
+"Please explain [concept] in simple language, assuming I know
+nothing about this field."
+
+6. Email template
+"Please write a [formal / brief] email about [purpose],
+addressed to [role], in a [friendly / professional] tone."
+
+7. Meeting notes template
+"Here are some meeting notes. Please organise them into:
+1. Main discussion points  2. Decisions made  3. Action items: [content]"
+
+8. Feedback template
+"Please give constructive feedback on the following [document / design / proposal],
+noting both strengths and areas for improvement: [content]"
+```
+
+*Advanced prompt principles:*
+- Give AI a role: "You are a [role] with 10 years of experience"
+- Specify format: "Please respond in bullet point format"
+- Add constraints: "Keep your answer under 100 words"
+- Follow up when unsatisfied: "Be more specific" / "Try a different angle"
+
+**Module C: AI efficiency in daily work (immediate, practical value)**
+No technical background needed — usable today:
+
+- **Writing**: Use AI to draft a first version, then refine it yourself — 3x faster than starting from scratch
+- **Information processing**: Feed long articles, reports, or meeting notes to AI for a summary, then apply your own judgement
+- **Review and proofreading**: Ask AI to check an email's logic and tone before sending
+- **Quick learning**: When you encounter an unfamiliar concept, ask AI to explain it simply
+- **Brainstorming**: When stuck, ask AI for 5 different perspectives to spark your own thinking
+
+*Each scenario includes: which tool to use + specific steps + real example + things to watch out for*
+
+---
+
+**Layer 2: Role electives (individual choice)**
+Built on the personal version logic, deepened by role on top of the shared foundation.
+Engineers, product managers, designers, and managers each have dedicated advanced content.
+
+**Key design principle — minimise the sense of obligation:**
+- Not called "mandatory courses" — called "team toolkit"
+- Framed as "how our team has agreed to work," not "tasks you must complete"
+- Completion records exist, but invisible to employees — only management sees the data
+- Employees experience it as a tool, not an assessment
+
+**The most critical technical decision for enterprise:**
+Requires a content management backend so the company's HR or L&D team can define mandatory content themselves.
+You don't maintain each company's content — the enterprise manages it.
+This requires meaningfully different architecture from the personal version in the content layer.
+
+---
+
+## IX.V. Potential User Expansion (v1 Reference)
+
+v0 focuses on the current user archetypes (UX Designer / Engineer / Product Manager / Manager).
+But the product's potential users are more diverse than expected. The following directions can be considered after v0 is validated:
+
+**Transitional founder (e.g. sales transitioning to product manager):**
+- Core need: Systematically learn how to build products with Claude Code, understand business models and product strategy
+- Relevant layers: L7 AI Entrepreneurship & Business (primary) + L4 AI Tools in Practice (secondary)
+- Brief preference: startup, business models, 0-to-1 product content
+- Action recommendations: foundational startup curriculum, business validation methods, rapid MVP building
+- History brief search: browse all past startup-related briefs — transforms the product from "daily consumable" to "searchable knowledge library"
+
+This user archetype requires no new product architecture. The existing framework covers it entirely — just add an "AI entrepreneurship" exploration direction at sign-up.
+
+---
+
+## X. Open Questions (Honest Record)
+
+1. How does the knowledge scroll transition naturally between "scanning the whole" and "diving deep into a node"? **Needs prototype testing.**
+2. The accuracy of the behavioural signal system needs real-world validation — can signals truly infer user direction and level? Are Claude's signal-based action recommendations genuinely precise? This is one of v0's most critical hypotheses to test.
+3. How should AI Q&A and inline term explanation entry points be designed so they don't interrupt reading flow? **Needs detailed interaction design.**
+4. Can Unsplash API reliably deliver images across all three opening screen categories? Or does this require a manually curated library?
+5. How does the guest's exploration direction persist across pages without login? (Session storage should work — needs confirmation.)
+6. ~~Do the Brief and Actions appear sequentially on the same page, or as separate navigation destinations?~~ **Decided: separate navigation entries. See Section VI navigation structure.**
+
+---
+
+## XI. A Note to Yourself
+
+We are living through a moment of profound transformation — one driven by AI, and one that will reshape how society works at every level. As someone present at the very beginning of this shift, I want to build a genuine, systemic understanding of AI. And as someone who holds two identities — a working professional and a participant in the broader world — I want to explore what this change makes possible in both dimensions. Not just in the short term, but as a long-term orientation.
+
+Building this product is itself part of that exploration — a way of discovering what it means to work as a product designer.
+
+---
+
+*"A living map that traces the frontier of human knowledge — and the path you walk through it."*
