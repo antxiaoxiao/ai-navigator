@@ -54,7 +54,7 @@ export default function TopBar() {
 
   return (
     <header
-      className="hidden md:flex fixed top-0 left-0 right-0 z-50 items-center"
+      className="flex fixed top-0 left-0 right-0 z-50 items-center"
       style={{
         height: "56px",
         backgroundColor: "#0d0d0f",
