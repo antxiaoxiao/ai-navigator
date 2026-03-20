@@ -3,7 +3,7 @@ import { EB_Garamond } from "next/font/google";
 import "./globals.css";
 import BottomNav from "@/components/BottomNav";
 import SearchBar from "@/components/SearchBar";
-import SideNav from "@/components/SideNav";
+
 import TopBar from "@/components/TopBar";
 
 const ebGaramond = EB_Garamond({
@@ -28,7 +28,7 @@ export default function RootLayout({
 
         {/* ── Desktop only: TopBar (56px) + collapsible SideNav (48px) ── */}
         <TopBar />
-        <SideNav />
+        
 
         {/* ── Mobile only: SearchBar top + BottomNav bottom ── */}
         <SearchBar />
@@ -41,7 +41,7 @@ export default function RootLayout({
         <div
           className="min-h-screen
                      pt-14 pb-16
-                     md:pt-[56px] md:pb-0 md:pl-[48px]"
+                     md:pt-[56px] md:pb-0"
         >
           {/* Inner content: max-width + centered */}
           <div className="max-w-[900px] mx-auto px-6 py-10">
