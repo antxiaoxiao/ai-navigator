@@ -61,7 +61,7 @@ export default function SideNav() {
       style={{
         width: "48px",
         backgroundColor: "#0d0d0f",
-        borderRight: "1px solid rgba(196,168,130,0.15)",
+        borderRight: "1px solid rgba(221,184,98,0.15)",
         transition: "width 0.2s ease",
       }}
       onMouseEnter={(e) => {
@@ -81,9 +81,9 @@ export default function SideNav() {
               href={href}
               className="flex items-center rounded transition-colors duration-150"
               style={{
-                color: active ? "#C4A882" : "rgba(200,190,175,0.40)",
+                color: active ? "#DDB862" : "rgba(200,190,175,0.40)",
                 backgroundColor: active
-                  ? "rgba(196,168,130,0.09)"
+                  ? "rgba(221,184,98,0.09)"
                   : "transparent",
                 height: "44px",
                 minWidth: 0,

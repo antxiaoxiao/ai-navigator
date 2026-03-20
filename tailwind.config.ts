@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         bg: "#0d0d0f",
-        gold: "#C4A882",
+        gold: "#DDB862",
         text: "rgba(240,235,225,0.90)",
         "text-secondary": "rgba(200,190,175,0.60)",
       },

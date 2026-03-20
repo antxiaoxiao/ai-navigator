@@ -14,7 +14,7 @@ export default function TopBar() {
       style={{
         height: "56px",
         backgroundColor: "#0d0d0f",
-        borderBottom: "1px solid rgba(196,168,130,0.12)",
+        borderBottom: "1px solid rgba(221,184,98,0.12)",
       }}
     >
       {/* Left: brand — sits over the collapsed SideNav (48px) */}
@@ -28,7 +28,7 @@ export default function TopBar() {
       {/* Brand name — visible beside sidebar */}
       <span
         className="font-serif tracking-[0.25em] text-sm uppercase flex-shrink-0 pr-8"
-        style={{ color: "#C4A882" }}
+        style={{ color: "#DDB862" }}
       >
         AI Navigator
       </span>
@@ -41,7 +41,7 @@ export default function TopBar() {
             maxWidth: "480px",
             width: "100%",
             height: "34px",
-            border: "1px solid rgba(196,168,130,0.18)",
+            border: "1px solid rgba(221,184,98,0.18)",
             borderRadius: "6px",
           }}
         >
@@ -50,7 +50,7 @@ export default function TopBar() {
             height="13"
             viewBox="0 0 16 16"
             fill="none"
-            style={{ color: "#C4A882", flexShrink: 0 }}
+            style={{ color: "#DDB862", flexShrink: 0 }}
           >
             <circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" strokeWidth="1.3" />
             <line x1="10.5" y1="10.5" x2="14.5" y2="14.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
@@ -61,7 +61,7 @@ export default function TopBar() {
             className="flex-1 bg-transparent font-serif text-xs outline-none placeholder:opacity-30"
             style={{
               color: "rgba(240,235,225,0.85)",
-              caretColor: "#C4A882",
+              caretColor: "#DDB862",
             }}
           />
         </div>
@@ -74,9 +74,9 @@ export default function TopBar() {
           style={{
             width: "30px",
             height: "30px",
-            border: "1px solid rgba(196,168,130,0.30)",
-            color: "rgba(196,168,130,0.60)",
-            backgroundColor: "rgba(196,168,130,0.06)",
+            border: "1px solid rgba(221,184,98,0.30)",
+            color: "rgba(221,184,98,0.60)",
+            backgroundColor: "rgba(221,184,98,0.06)",
           }}
         >
           A
